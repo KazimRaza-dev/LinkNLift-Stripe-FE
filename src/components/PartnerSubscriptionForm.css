@@ -1,0 +1,78 @@
+.subscription-form-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+}
+
+.subscription-form {
+display: flex;
+flex-direction: column;
+}
+
+.subscription-form h2 {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.plan-info {
+display: flex;
+flex-direction: column;
+gap: 10px;
+margin-bottom: 20px;
+}
+
+.plan-option {
+padding: 10px;
+border: 2px solid #ccc;
+border-radius: 5px;
+cursor: pointer;
+transition: border-color 0.3s ease;
+}
+
+.plan-option.selected {
+border-color: #28a745;
+}
+
+.plan-option h3 {
+margin: 0;
+}
+
+.plan-option p {
+margin: 5px 0;
+}
+
+.card-element {
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.submit-button {
+padding: 10px;
+background-color: #28a745;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.submit-button:disabled {
+background-color: #6c757d;
+}
+
+.error-message {
+color: #dc3545;
+margin-top: 20px;
+text-align: center;
+}
+
+.success-message {
+color: #28a745;
+margin-top: 20px;
+text-align: center;
+}
