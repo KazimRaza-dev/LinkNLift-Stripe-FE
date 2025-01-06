@@ -38,7 +38,7 @@ const PartnerSubscriptionForm = () => {
       }
 
       const response = await axios.post(
-        'http://localhost:8080/stripe/create-subscription',
+        'https://linknlift-backend.com/stripe/create-subscription',
         {
           price_id: priceId, // Use the selected price ID
         },
@@ -76,9 +76,9 @@ const PartnerSubscriptionForm = () => {
         <div className="plan-info">
           <div
             className={`plan-option ${
-              priceId === 'price_1PfR1QDE8JmvRXeYKRoJpb4Q' ? 'selected' : ''
+              priceId === 'price_1QeEXoDiyZydOJ5trEFDGj8c' ? 'selected' : ''
             }`}
-            onClick={() => setPriceId('price_1PfR1QDE8JmvRXeYKRoJpb4Q')}
+            onClick={() => setPriceId('price_1QeEXoDiyZydOJ5trEFDGj8c')}
           >
             <h3>1 Month Plan</h3>
             <p>$15.99 per month</p>
@@ -86,9 +86,9 @@ const PartnerSubscriptionForm = () => {
           </div>
           <div
             className={`plan-option ${
-              priceId === 'price_1PfR6sDE8JmvRXeYDEWqHnT1' ? 'selected' : ''
+              priceId === 'price_1QeEaODiyZydOJ5tb2JkBqWp' ? 'selected' : ''
             }`}
-            onClick={() => setPriceId('price_1PfR6sDE8JmvRXeYDEWqHnT1')}
+            onClick={() => setPriceId('price_1QeEaODiyZydOJ5tb2JkBqWp')}
           >
             <h3>3 Months Plan</h3>
             <p>$31.99 per 3 months</p>
@@ -96,9 +96,9 @@ const PartnerSubscriptionForm = () => {
           </div>
           <div
             className={`plan-option ${
-              priceId === 'price_1PfR8ADE8JmvRXeYeujkMGoC' ? 'selected' : ''
+              priceId === 'price_1QeEblDiyZydOJ5tQMFMeBIZ' ? 'selected' : ''
             }`}
-            onClick={() => setPriceId('price_1PfR8ADE8JmvRXeYeujkMGoC')}
+            onClick={() => setPriceId('price_1QeEblDiyZydOJ5tQMFMeBIZ')}
           >
             <h3>12 Months Plan</h3>
             <p>$89.99 per year</p>
